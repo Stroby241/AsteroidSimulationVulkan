@@ -1,1 +1,3 @@
 # AsteroidSimulationVulkan
+
+https://www.researchgate.net/publication/343270973_Parallel_Computation_of_3D_Clipped_Voronoi_Diagrams

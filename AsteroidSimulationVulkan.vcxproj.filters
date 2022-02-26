@@ -4,6 +4,15 @@
     <Filter Include="src">
       <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\VulkanRendering">
+      <UniqueIdentifier>{EBC66462-5728-4270-E095-88224CF6782F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\VulkanRendering\Player">
+      <UniqueIdentifier>{A7E15FF9-93F1-0BCA-FCAA-70E8E8D9FA62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\VulkanRendering\Player\Camera">
+      <UniqueIdentifier>{3F34DE98-ABA2-3318-F48B-EE17603929B4}</UniqueIdentifier>
+    </Filter>
     <Filter Include="vendor">
       <UniqueIdentifier>{B3738122-9F15-ACF8-88D0-BF4C74113349}</UniqueIdentifier>
     </Filter>
@@ -12,6 +21,107 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Log.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\App.h">
+      <Filter>src\VulkanRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\AppDemo.h">
+      <Filter>src\VulkanRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\Buffer.h">
+      <Filter>src\VulkanRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\Descriptor.h">
+      <Filter>src\VulkanRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\Device.h">
+      <Filter>src\VulkanRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\GameObject.h">
+      <Filter>src\VulkanRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\Gui.h">
+      <Filter>src\VulkanRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\Model.h">
+      <Filter>src\VulkanRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\Pipeline.h">
+      <Filter>src\VulkanRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\Player\Camera\Camera.h">
+      <Filter>src\VulkanRendering\Player\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\Player\Camera\FPSCamera.h">
+      <Filter>src\VulkanRendering\Player\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\Player\Player.h">
+      <Filter>src\VulkanRendering\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\Renderer.h">
+      <Filter>src\VulkanRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\SwapChain.h">
+      <Filter>src\VulkanRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\Window.h">
+      <Filter>src\VulkanRendering</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VulkanRendering\render_system.h">
+      <Filter>src\VulkanRendering</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Log.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\App.cpp">
+      <Filter>src\VulkanRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\AppDemo.cpp">
+      <Filter>src\VulkanRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\Buffer.cpp">
+      <Filter>src\VulkanRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\Descriptor.cpp">
+      <Filter>src\VulkanRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\Device.cpp">
+      <Filter>src\VulkanRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\Gui.cpp">
+      <Filter>src\VulkanRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\Model.cpp">
+      <Filter>src\VulkanRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\Pipeline.cpp">
+      <Filter>src\VulkanRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\Player\Camera\Camera.cpp">
+      <Filter>src\VulkanRendering\Player\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\Player\Camera\FPSCamera.cpp">
+      <Filter>src\VulkanRendering\Player\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\Player\Player.cpp">
+      <Filter>src\VulkanRendering\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\Renderer.cpp">
+      <Filter>src\VulkanRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\SwapChain.cpp">
+      <Filter>src\VulkanRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\Window.cpp">
+      <Filter>src\VulkanRendering</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VulkanRendering\render_system.cpp">
+      <Filter>src\VulkanRendering</Filter>
+    </ClCompile>
     <ClCompile Include="src\main.cpp">
       <Filter>src</Filter>
     </ClCompile>

@@ -1,5 +1,11 @@
 
 LIBS = {}
+LIBS["spdlog"] = "vendor/spdlog"
+LIBS["glm"] = "vendor/glm"
+LIBS["vulkan"] = "C:/VulkanSDK/1.3.204.0"
+LIBS["imgui"] = "vendor/imgui"
+LIBS["glfw"] = "vendor/glfw-3.3.4.bin.WIN64"
+LIBS["imgui"] = "vendor/imgui"
 
 workspace "AsteroidSimulationVulkan" 
     configurations { "Debug","Release" } 
@@ -13,22 +19,30 @@ project "AsteroidSimulationVulkan"
         "src/**.h",
         "src/**.cpp",
         "src/**.hpp",
+        "vendor/imgui/**.cpp",
     }
 
     architecture "x64"
     cppdialect "C++20"
 
     includedirs {
-        "src"
+        "src",
+        "%{LIBS.glm}",
+        "%{LIBS.spdlog}",
+        "%{LIBS.glfw}/include",
+        "%{LIBS.imgui}",
+        "%{LIBS.vulkan}/Include",
     }
 
     libdirs
     {
-
+        "%{LIBS.vulkan}/Lib",
+        "%{LIBS.glfw}/lib-vc2019",
     }
 
     links {
- 
+        "glfw3",
+        "vulkan-1",
     }
 
     defines{
@@ -37,9 +51,6 @@ project "AsteroidSimulationVulkan"
 
     filter "configurations:Debug" 
         defines { "DEBUG" } 
-        prebuildcommands { 
-           
-        }
         symbols "On"
 
     filter "configurations:Release" 

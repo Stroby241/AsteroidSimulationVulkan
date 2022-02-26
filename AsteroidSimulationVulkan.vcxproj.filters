@@ -27,9 +27,6 @@
     <ClInclude Include="src\VulkanRendering\App.h">
       <Filter>src\VulkanRendering</Filter>
     </ClInclude>
-    <ClInclude Include="src\VulkanRendering\AppDemo.h">
-      <Filter>src\VulkanRendering</Filter>
-    </ClInclude>
     <ClInclude Include="src\VulkanRendering\Buffer.h">
       <Filter>src\VulkanRendering</Filter>
     </ClInclude>
@@ -78,9 +75,6 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\VulkanRendering\App.cpp">
-      <Filter>src\VulkanRendering</Filter>
-    </ClCompile>
-    <ClCompile Include="src\VulkanRendering\AppDemo.cpp">
       <Filter>src\VulkanRendering</Filter>
     </ClCompile>
     <ClCompile Include="src\VulkanRendering\Buffer.cpp">

@@ -1,8 +1,5 @@
 #include "Player.h"
 
-
-extern World* world;
-
 glm::vec3 Player::UpdatePlayer(float delta)
 {
 

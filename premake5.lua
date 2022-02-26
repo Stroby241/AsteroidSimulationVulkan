@@ -6,6 +6,7 @@ LIBS["vulkan"] = "C:/VulkanSDK/1.3.204.0"
 LIBS["imgui"] = "vendor/imgui"
 LIBS["glfw"] = "vendor/glfw-3.3.4.bin.WIN64"
 LIBS["imgui"] = "vendor/imgui"
+LIBS["boost"] = "vendor/boost"
 
 workspace "AsteroidSimulationVulkan" 
     configurations { "Debug","Release" } 
@@ -32,6 +33,7 @@ project "AsteroidSimulationVulkan"
         "%{LIBS.glfw}/include",
         "%{LIBS.imgui}",
         "%{LIBS.vulkan}/Include",
+        "%{LIBS.boost}",
     }
 
     libdirs

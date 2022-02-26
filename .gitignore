@@ -350,3 +350,5 @@ MigrationBackup/
 .ionide/
 AsteroidSimulationVulkan.vcxproj
 AsteroidSimulationVulkan.sln
+AsteroidSimulationVulkan.vcxproj.filters
+AsteroidSimulationVulkan.vcxproj.filters

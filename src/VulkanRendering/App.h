@@ -25,17 +25,18 @@ struct Storage {
 
 
 class App {
+
 public:
 	static constexpr int WIDTH = 2560;
 	static constexpr int HEIGHT = 1440;
 
 	App();
-	virtual ~App();
+	~App();
 
 	App(const App&) = delete;
 	App& operator=(const App&) = delete;
 
-	virtual void run() = 0;
+	void run();
 
 protected:
 	void initImgui();
@@ -45,4 +46,7 @@ protected:
 
 	std::unique_ptr<DescriptorPool> globalPool = {};
 	VkDescriptorPool imguiPool;
+
+	void LoadModel();
+	std::vector<GameObject> models;
 };

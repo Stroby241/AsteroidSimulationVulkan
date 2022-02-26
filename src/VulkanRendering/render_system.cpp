@@ -4,7 +4,6 @@
 #include "Log.h"
 
 
-
 RenderSystem::RenderSystem(Device& device, Window& window, VkRenderPass renderPass, VkDescriptorSetLayout globalSetLayout)
 	: device(device), window(window)
 {
@@ -35,12 +34,6 @@ void RenderSystem::renderGameObjects(FrameInfo& frameInfo, std::vector<GameObjec
 		SimplePushConstantData push{};
 		push.transform = obj.transform.mat4();
 		push.color = obj.color;
-		/*if (frameInfo.selected == obj.getId()) {
-			push.color = { 0.1,0.1,0.1 };
-		}
-		else {
-			push.color = { 1,1,1 };
-		}*/
 		
 		vkCmdPushConstants(frameInfo.commandBuffer, pipelineLayout, VK_SHADER_STAGE_VERTEX_BIT | VK_SHADER_STAGE_FRAGMENT_BIT, 0, sizeof(SimplePushConstantData), &push);
 
@@ -85,15 +78,8 @@ void RenderSystem::createPipelineLayout(VkDescriptorSetLayout globalSetLayout)
 
 void RenderSystem::createPipeline(VkRenderPass renderPass)
 {
-	#ifdef __APPLE__
-	auto pipelineConfig = Pipeline::defaultPipelineConfigInfo(window.width, window.height);
-	pipelineConfig.renderPass = renderPass;
-	pipelineConfig.pipelineLayout = pipelineLayout;
-	pipeline = std::make_unique<Pipeline>(device, "/Users/timjaeschke/Documents/GitHub/Vulkan_Engine/Shader/vert.spv", "/Users/timjaeschke/Documents/GitHub/Vulkan_Engine/Shader/frag.spv", pipelineConfig);
-	#elif _WIN32
 	auto pipelineConfig = Pipeline::defaultPipelineConfigInfo(window.width, window.height);
 	pipelineConfig.renderPass = renderPass;
 	pipelineConfig.pipelineLayout = pipelineLayout;
 	pipeline = std::make_unique<Pipeline>(device, "Shader/vert.spv", "Shader/frag.spv", pipelineConfig);
-	#endif
 }

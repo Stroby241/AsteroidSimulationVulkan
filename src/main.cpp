@@ -1,11 +1,11 @@
-#include "VulkanRendering/AppDemo.h"
+#include "VulkanRendering/App.h"
 #include "Log.h"
 
 
 int main() {
 
 	Log::Init();
-	App* app = new AppDemo();
+	App* app = new App();
 
 	app->run();
 
